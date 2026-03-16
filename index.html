@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com elementos semânticos</title>
+
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        /* Cabeçalho */
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #9c101b;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .cabecalho .logo {
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .cabecalho .titulo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .cabecalho nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .cabecalho nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .cabecalho nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            padding: 20px;
+        }
+
+        .corpo {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .corpo h2 {
+            color: #2e8b57;
+            margin-bottom: 10px;
+        }
+
+        .corpo p {
+            text-align: justify;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .corpo .centralizado {
+            text-align: center;
+        }
+
+        .corpo img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .corpo h3 {
+            color: #9c101b;
+            margin-bottom: 10px;
+        }
+
+        /* Listas */
+        .corpo ol,
+        .corpo ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #f9f9f9;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #f0f8ff;
+        }
+
+        /* Rodapé */
+        .rodape {
+            background-color: #9c101b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .rodape span {
+            font-size: 14px;
+        }
+
+        /* Links */
+        a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Detalhes Expansíveis */
+        details {
+            margin-bottom: 10px;
+        }
+
+        details summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Destaque de Texto */
+        mark {
+            background-color: #ffeb3b;
+            padding: 2px;
+        }
+
+        /* Representação de Data/Hora */
+        time {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <img src="logo_catolica_SC_branco.png" alt="Logo" class="logo">
+        <span class="titulo">Católica SC - Engenharia de Software</span>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#importancia">Importância</a></li>
+                <li><a href="#tabela">Tabela</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção de Boas-Vindas -->
+        <section id="sobre" class="corpo">
+            <h2>Bem-vindo!</h2>
+            <p>
+                Esta é uma página de exemplo criada usando HTML e CSS. O objetivo é demonstrar como estruturar um site
+                básico utilizando elementos semânticos.
+            </p>
+            <p>
+                Você pode adicionar mais conteúdo, como imagens, tabelas e links, utilizando as tags HTML disponíveis.
+            </p>
+            <figure class="centralizado">
+                <img src="pexels-fotios-photos-16129724_grande.jpg" alt="Imagem de exemplo">
+                <figcaption>Imagem ilustrativa de um ambiente de desenvolvimento de software.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Seção de Importância do Curso -->
+        <section id="importancia" class="corpo">
+            <h2>A Importância do Curso de Engenharia de Software</h2>
+            <p>
+                A Engenharia de Software é uma das áreas mais importantes da tecnologia moderna. Com o crescimento
+                acelerado da digitalização, a necessidade de profissionais qualificados para desenvolver, manter e
+                aprimorar sistemas computacionais nunca foi tão alta.
+            </p>
+            <p>
+                Os cursos de Engenharia de Software capacitam os alunos a projetar sistemas robustos e eficientes. Eles
+                aprendem conceitos fundamentais como arquitetura de software, desenvolvimento ágil, banco de dados,
+                segurança cibernética e experiência do usuário.
+            </p>
+            <p>
+                Além do conhecimento técnico, os engenheiros de software precisam desenvolver habilidades interpessoais
+                e de gestão de projetos. Trabalhar em equipe, resolver problemas e se adaptar a novas tecnologias são
+                requisitos essenciais para o sucesso na área.
+            </p>
+        </section>
+
+        <!-- Seção de Listas -->
+        <section class="corpo">
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+
+            <h3>Lista Não Ordenada</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Tabela -->
+        <section id="tabela" class="corpo">
+            <h3>Tabela de Exemplo</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>25</td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>Bruno</td>
+                        <td>30</td>
+                        <td>Rio de Janeiro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção de Citação -->
+        <section class="corpo">
+            <h3>Citação</h3>
+            <!-- Tag <blockquote> para citações longas -->
+            <blockquote>
+                "A Engenharia de Software é a aplicação de uma abordagem sistemática, disciplinada e quantificável ao
+                desenvolvimento, operação e manutenção de software."
+                <!-- Tag <cite> para referência da citação -->
+                <cite>— IEEE Standard Glossary of Software Engineering Terminology</cite>
+            </blockquote>
+        </section>
+
+        <!-- Seção de Código -->
+        <section class="corpo">
+            <h3>Exemplo de Código</h3>
+            <!-- Tag <pre> para manter a formatação do código -->
+            <pre>
+                <!-- Tag <code> para exibir código de programação -->
+                <code>
+function saudacao() {
+    console.log("Olá, mundo!");
+}
+                </code>
+            </pre>
+        </section>
+
+        <!-- Seção de Entrada de Teclado -->
+        <section class="corpo">
+            <h3>Entrada de Teclado</h3>
+            <p>
+                Para salvar o arquivo, pressione <!-- Tag <kbd> para representar entrada de teclado -->
+                <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+            </p>
+        </section>
+
+        <!-- Seção de Formulário -->
+        <section id="contato" class="corpo">
+            <h3>Formulário de Contato</h3>
+            <!-- Tag <form> para agrupar campos de formulário -->
+            <form>
+                <!-- Tag <fieldset> para agrupar elementos do formulário -->
+                <fieldset>
+                    <!-- Tag <legend> para título do fieldset -->
+                    <legend>Informações Pessoais</legend>
+                    <!-- Tag <label> para associar rótulos a campos de entrada -->
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Seção de Resultado Dinâmico -->
+        <section class="corpo">
+            <h3>Resultado Dinâmico</h3>
+            <!-- Tag <form> com atributo oninput para cálculo dinâmico -->
+            <form oninput="resultado.value = parseInt(a.value) + parseInt(b.value)">
+                <label for="a">Valor A:</label>
+                <input type="number" id="a" name="a" value="0"><br><br>
+                <label for="b">Valor B:</label>
+                <input type="number" id="b" name="b" value="0"><br><br>
+                <label for="resultado">Resultado:</label>
+                <!-- Tag <output> para exibir o resultado dinâmico -->
+                <output name="resultado" for="a b">0</output>
+            </form>
+        </section>
+
+        <!-- Conteúdo Relacionado (Aside) -->
+        <aside class="corpo">
+            <h3>Informações Adicionais</h3>
+            <p>
+                Para mais detalhes sobre o curso, visite o site oficial da <a href="https://www.catolicasc.org.br"
+                    target="_blank">Católica SC</a>.
+            </p>
+            <p>
+                Entre em contato conosco via <a href="mailto:edsonvazlopes@protonmail.com">e-mail</a>.
+            </p>
+            <!-- Tag <address> para informações de contato -->
+            <address>
+                Endereço: Rua Exemplo, 123 - Centro, Cidade - SC<br>
+                Telefone: (48) 1234-5678
+            </address>
+        </aside>
+
+        <!-- Detalhes Expansíveis -->
+        <details class="corpo">
+            <summary>Clique para ver mais sobre o curso</summary>
+            <p>
+                O curso de Engenharia de Software da Católica SC é reconhecido nacionalmente por sua excelência
+                acadêmica e por formar profissionais altamente qualificados para o mercado de trabalho.
+            </p>
+        </details>
+
+        <!-- Destaque de Texto -->
+        <p class="corpo">
+            <!-- Tag <mark> para destacar texto -->
+            <mark>Engenharia de Software</mark> é uma das carreiras mais promissoras do século XXI, com alta demanda e
+            excelentes oportunidades de crescimento.
+        </p>
+
+        <!-- Representação de Data/Hora -->
+        <p class="corpo">
+            Próxima aula: <!-- Tag <time> para representação de data/hora -->
+            <time datetime="2023-10-15T14:00">15 de Outubro de 2023, 14:00</time>.
+        </p>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <span>&copy; 2025 Católica SC - Engenharia de Software. Todos os direitos reservados.</span>
+    </footer>
+
+</body>
+
+</html>
